@@ -1,6 +1,7 @@
 {% set name = "pipefunc" %}
 {% set version = "0.7.0" %}
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -30,6 +31,7 @@ requirements:
     - cloudpickle
     - numpy
     - tabulate
+
 
 test:
   imports:
