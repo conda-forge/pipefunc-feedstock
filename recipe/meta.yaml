@@ -28,6 +28,7 @@ requirements:
     - versioningit
     - typing-extensions
     - cloudpickle
+    - numpy
 
 test:
   imports:
