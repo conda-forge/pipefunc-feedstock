@@ -1,5 +1,5 @@
 {% set name = "pipefunc" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pipefunc-{{ version }}.tar.gz
-  sha256: c3fe2eb7dda36583dff4ee68e85f81d2cbb6e219a329aef6797361903b22ea03
+  sha256: e26f05810f68924090a5bf0121a4bd8d069dc2fd06fe1575de7bc17707077707
 
 build:
   noarch: python
@@ -30,8 +30,6 @@ requirements:
     - typing-extensions
     - cloudpickle
     - numpy
-    - tabulate
-
 
 test:
   imports:
