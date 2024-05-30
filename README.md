@@ -3,7 +3,7 @@ About pipefunc-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pipefunc-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/basnijholt/pipefunc
+Home: https://github.com/pipefunc/pipefunc
 
 Package license: MIT
 
