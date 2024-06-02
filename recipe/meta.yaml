@@ -1,5 +1,5 @@
 {% set name = "pipefunc" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 
 package:
@@ -17,17 +17,16 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - setuptools
     - wheel
     - versioningit
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - networkx
     - psutil
     - versioningit
-    - typing-extensions
     - cloudpickle
     - numpy
 
