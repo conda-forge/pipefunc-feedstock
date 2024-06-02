@@ -26,7 +26,6 @@ requirements:
     - python >=3.10
     - networkx
     - psutil
-    - versioningit
     - cloudpickle
     - numpy
 
