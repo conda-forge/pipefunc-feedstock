@@ -1,5 +1,5 @@
 {% set name = "pipefunc" %}
-{% set version = "0.43.0" %}
+{% set version = "0.44.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pipefunc-{{ version }}.tar.gz
-  sha256: 132f6429a697caa2c067f03408ceba73cdd640351b6b6b8b295e837bee3ae8b8
+  sha256: 2dc78a241f0622d7559345a2a3bace58b3aabca5c61ff70e852dbf2dc216a6f4
 
 build:
   noarch: python
