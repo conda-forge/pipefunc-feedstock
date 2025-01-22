@@ -32,7 +32,7 @@ outputs:
       run:
         - python >={{ python_min }}
         - networkx
-        - psutil
+        - psutil  # technically not a requirement
         - cloudpickle
         - numpy
     test:
