@@ -48,7 +48,6 @@ outputs:
       run:
         - {{ pin_subpackage(name, max_pin="x.x.x") }}
         - adaptive
-        - adaptive-scheduler
         - graphviz
         - graphviz-anywidget
         - griffe
