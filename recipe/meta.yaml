@@ -6,7 +6,7 @@
 {% if PYTHON is not defined %}{% set PYTHON = "$PYTHON" %}{% endif %}
 
 package:
-  name: {{ name }}-suite
+  name: {{ name }}
   version: {{ version }}
 
 source:
