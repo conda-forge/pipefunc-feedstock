@@ -2,8 +2,11 @@
 {% set version = "0.50.0" %}
 {% set python_min = "3.10" %}
 
+# handle undefined PYTHON in `noarch: generic` outputs
+{% if PYTHON is not defined %}{% set PYTHON = "$PYTHON" %}{% endif %}
+
 package:
-  name: {{ name|lower }}
+  name: {{ name }}-suite
   version: {{ version }}
 
 source:
@@ -12,31 +15,59 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
-requirements:
-  host:
-    - python {{ python_min }}
-    - hatchling
-    - wheel
-    - versioningit
-    - pip
-  run:
-    - python >={{ python_min }}
-    - networkx
-    - psutil
-    - cloudpickle
-    - numpy
+outputs:
+  - name: {{ name }}
+    build:
+      noarch: generic
+      script: {{ PYTHON }} -m pip install . -vv
+    requirements:
+      host:
+        - python {{ python_min }}
+        - hatchling
+        - wheel
+        - versioningit
+        - pip
+      run:
+        - python >={{ python_min }}
+        - networkx
+        - psutil
+        - cloudpickle
+        - numpy
+    test:
+      imports:
+        - pipefunc
+      commands:
+        - pip check
+      requires:
+        - pip
+        - python {{ python_min }}
 
-test:
-  imports:
-    - pipefunc
-  commands:
-    - pip check
-  requires:
-    - pip
-    - python {{ python_min }}
+  - name: {{ name }}-all
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - {{ pin_subpackage(name, max_pin="x.x.x") }}
+        - adaptive
+        - adaptive-scheduler
+        - graphviz
+        - graphviz-anywidget
+        - griffe
+        - ipywidgets
+        - matplotlib-base
+        - pandas
+        - psutil
+        - rich
+        - xarray
+        - zarr
+    test:
+      imports:
+        - pipefunc
+      requires:
+        - pip
+        - python {{ python_min }}
 
 about:
   home: https://github.com/pipefunc/pipefunc
