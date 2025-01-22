@@ -41,7 +41,7 @@ outputs:
         - pip
         - python {{ python_min }}
 
-  - name: {{ name }}-all
+  - name: {{ name }}-extras
     build:
       noarch: generic
     requirements:
