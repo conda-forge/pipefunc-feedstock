@@ -28,7 +28,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pipefunc-green.svg)](https://anaconda.org/conda-forge/pipefunc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pipefunc.svg)](https://anaconda.org/conda-forge/pipefunc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pipefunc.svg)](https://anaconda.org/conda-forge/pipefunc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pipefunc.svg)](https://anaconda.org/conda-forge/pipefunc) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pipefunc--all-green.svg)](https://anaconda.org/conda-forge/pipefunc-all) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pipefunc-all.svg)](https://anaconda.org/conda-forge/pipefunc-all) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pipefunc-all.svg)](https://anaconda.org/conda-forge/pipefunc-all) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pipefunc-all.svg)](https://anaconda.org/conda-forge/pipefunc-all) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pipefunc--extras-green.svg)](https://anaconda.org/conda-forge/pipefunc-extras) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pipefunc-extras.svg)](https://anaconda.org/conda-forge/pipefunc-extras) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pipefunc-extras.svg)](https://anaconda.org/conda-forge/pipefunc-extras) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pipefunc-extras.svg)](https://anaconda.org/conda-forge/pipefunc-extras) |
 
 Installing pipefunc
 ===================
@@ -40,16 +40,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pipefunc, pipefunc-all` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pipefunc, pipefunc-extras` can be installed with `conda`:
 
 ```
-conda install pipefunc pipefunc-all
+conda install pipefunc pipefunc-extras
 ```
 
 or with `mamba`:
 
 ```
-mamba install pipefunc pipefunc-all
+mamba install pipefunc pipefunc-extras
 ```
 
 It is possible to list all of the versions of `pipefunc` available on your platform with `conda`:
