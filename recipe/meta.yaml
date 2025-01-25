@@ -1,5 +1,5 @@
 {% set name = "pipefunc" %}
-{% set version = "0.50.3" %}
+{% set version = "0.51.0" %}
 {% set python_min = "3.10" %}
 
 # handle undefined PYTHON in `noarch: generic` outputs
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pipefunc-{{ version }}.tar.gz
-  sha256: be90df39126fdb56ac7fc606ae591d979197b1994e154770a205e5146a41d7d8
+  sha256: da8f6559be0e362fb72c5085e4ef21c0d1533e52a934417056f0cb78bce3c3d0
 
 build:
   noarch: python
