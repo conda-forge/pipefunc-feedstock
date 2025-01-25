@@ -46,10 +46,10 @@ outputs:
 
   - name: {{ name }}-extras
     build:
-      noarch: generic
+      noarch: python
     requirements:
       run:
-        - {{ pin_subpackage(name, max_pin="x.x.x") }}
+        - {{ pin_subpackage(name, exact=True) }}
         - adaptive
         - graphviz
         - graphviz-anywidget
