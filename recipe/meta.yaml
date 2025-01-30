@@ -15,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
 
 outputs:
   - name: {{ name }}
@@ -60,7 +60,7 @@ outputs:
         - psutil
         - rich
         - xarray
-        - zarr
+        - zarr <3
     test:
       imports:
         - pipefunc
