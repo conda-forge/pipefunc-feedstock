@@ -45,7 +45,7 @@ outputs:
             - pipefunc
       - script:
           - pip check
-        requirements:
+        extra_requirements:
           run:
             - pip
             - python ${{ python_min }}
