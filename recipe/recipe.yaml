@@ -63,6 +63,7 @@ outputs:
         - rich-argparse
         - xarray
         - zarr <3
+        - bokeh <3.7
     tests:
       - python:
           imports:
