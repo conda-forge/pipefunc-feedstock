@@ -4,7 +4,7 @@
 
 [project]
 name = "pipefunc-feedstock"
-version = "3.46.1"
+version = "3.47.0"
 description = "Pixi configuration for conda-forge/pipefunc-feedstock"
 authors = ["@conda-forge/pipefunc"]
 channels = ["conda-forge"]
