@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: "pipefunc"
-  version: "0.59.0"
+  version: "0.59.1"
   python_min: "3.10"
 
 recipe:
@@ -12,7 +12,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pipefunc-${{ version }}.tar.gz
-  sha256: 8ced080b19d0f80d982fb39a4c8e66e52b2a8533d7958b4bbbabff19065f3112
+  sha256: e422fb865ef3b3c49f0459527e12fc6ce8383445bb7304ce6c09eeba6a7ea6a6
 
 build:
   number: 0
