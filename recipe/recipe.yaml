@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: "pipefunc"
-  version: "0.63.0"
+  version: "0.64.0"
   python_min: "3.10"
 
 recipe:
@@ -12,7 +12,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pipefunc-${{ version }}.tar.gz
-  sha256: f7e84ca43f5627fc5f138d5a43a6d16a9437f4f0dd54b615f0bd2828300dc9e5
+  sha256: c2b29b7f9d00041f286c7dc6aeafebcd933942de6f7de31bb718a050f8d30f1a
 
 build:
   number: 0
@@ -52,7 +52,7 @@ outputs:
         - ${{ pin_subpackage(name, exact=True) }}
         - adaptive
         - graphviz
-        - graphviz-anywidget
+        - graphviz-anywidget >=0.7.0
         - griffe
         - ipywidgets
         - matplotlib-base
