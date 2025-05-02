@@ -7,7 +7,7 @@
 
 [project]
 name = "pipefunc-feedstock"
-version = "3.47.2"  # conda-smithy version used to generate this file
+version = "3.48.0"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/pipefunc-feedstock"
 authors = ["@conda-forge/pipefunc"]
 channels = ["conda-forge"]
