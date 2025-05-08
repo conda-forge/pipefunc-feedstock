@@ -15,7 +15,7 @@ source:
   sha256: cac4e601aee52b6f9408c39defc0dc001c752e00ea1448316a329fc5512cb38f
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - package:
@@ -63,7 +63,6 @@ outputs:
         - rich-argparse
         - xarray
         - zarr <3
-        - bokeh <3.7
     tests:
       - python:
           imports:
