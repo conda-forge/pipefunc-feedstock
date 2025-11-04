@@ -3,8 +3,8 @@ schema_version: 1
 
 context:
   name: "pipefunc"
-  version: "0.87.1"
-  python_min: "3.10"
+  version: "0.88.0"
+  python_min: "3.11"
 
 recipe:
   name: ${{ name }}
@@ -12,7 +12,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pipefunc-${{ version }}.tar.gz
-  sha256: ab558afbc0690a9d22ab7c92871a01a0b03b5b4ae142f14bc48340d76ed5b867
+  sha256: 24788d14256e97a176a252de9abfcdf465276e5d285196a31a9e81ae8a568d6d
 
 build:
   number: 0
@@ -62,8 +62,8 @@ outputs:
         - rich
         - rich-argparse
         - xarray
-        - zarr <3
-        - bokeh <3.7
+        - zarr >=3
+        - bokeh
     tests:
       - python:
           imports:
