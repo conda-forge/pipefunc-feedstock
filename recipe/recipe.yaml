@@ -39,6 +39,7 @@ outputs:
         - numpy
     tests:
       - python:
+          python_version: ${{ python_min }}.*
           imports:
             - pipefunc
 
@@ -66,6 +67,7 @@ outputs:
         - bokeh
     tests:
       - python:
+          python_version: ${{ python_min }}.*
           imports:
             - pipefunc
 
